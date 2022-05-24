@@ -18,11 +18,19 @@ namespace WebApplication1.Pages.Products
             _context = context;
         }
 
+        [BindProperty(SupportsGet = true)]
+        public string SearchString { get; set; }
+
         public IList<Product> Product { get;set; }
 
         public async Task OnGetAsync()
         {
-            Product = await _context.Products.ToListAsync();
+            if (!string.IsNullOrEmpty(SearchString))
+            {
+                Product = await _context.Products.Where(p => p.Name.Contains(SearchString)).ToListAsync();
+            }
+            else
+                Product = await _context.Products.ToListAsync();
         }
     }
 }

@@ -11,36 +11,16 @@
     <a asp-page="Create">Dodaj produkt</a>
 </p>
 
+<form>
+    <p>
+        <input type="text" placeholder="Wyszukaj produkt" asp-for="SearchString" />
+        <input type="submit" value="Szukaj" />
+    </p>
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Wyszukaj artykuł..">
-<br>
 
-<script>
-function myFunction() {
-  // Declare variables
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
+</form>
 
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementById("td")[0];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }
-  }
-}
-</script>
-
-<br>
-
-<table class="table" id="MyTable">
+<table class="table">
     <thead>
         <tr>
             <th>
@@ -57,7 +37,6 @@ function myFunction() {
     </thead>
     <tbody>
 @foreach (var item in Model.Product) 
-
 {
         <tr>
             <td>
@@ -67,7 +46,7 @@ function myFunction() {
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Description)
+                @Html.Raw(item.Description)
             </td>
             <td>
                 <a asp-page="/Orders/Create" asp-route-id="@item.Id">+🛒</a> 
@@ -77,12 +56,14 @@ function myFunction() {
                     <a asp-page="./Edit" asp-route-id="@item.Id">Edycja</a>
                     <a asp-page="./Details" asp-route-id="@item.Id">Szczegóły</a>
                     <a asp-page="./Delete" asp-route-id="@item.Id">Usuń</a>
-                }   
+                }
 
             </td>
         </tr>
 }
     </tbody>
 </table>
+
+
 
 

@@ -7499,11 +7499,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dawid\\Desktop\\WebAplicat5ion\\WebApplication1.csproj",
+      "projectUniqueName": "C:\\Users\\Dawid\\Desktop\\asp.sklep\\WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "C:\\Users\\Dawid\\Desktop\\WebAplicat5ion\\WebApplication1.csproj",
+      "projectPath": "C:\\Users\\Dawid\\Desktop\\asp.sklep\\WebApplication1.csproj",
       "packagesPath": "C:\\Users\\Dawid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dawid\\Desktop\\WebAplicat5ion\\obj\\",
+      "outputPath": "C:\\Users\\Dawid\\Desktop\\asp.sklep\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dawid\\AppData\\Roaming\\NuGet\\NuGet.Config",

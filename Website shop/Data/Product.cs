@@ -22,6 +22,7 @@ namespace WebApplication1.Data
         public string Name { get; set; }
 
         [Display(Name = "Opis")]
+        
         public string Description { get; set; }
 
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1l8A9HLA4CQ3w2Nagg0ekZCHW8e438yJJEqEhFqlHlyJVPxLvgLR8nqZInPUHFH71tIcX3oTeTxszM99tv5BmA==",
+  "dgSpecHash": "63dnJScUUvuPm3G7VhBYMLLT5D/RoPIcEpXPdDVwG6pwoxFAVeJ+GB1e0EsTBqxQgNKQjpJJsF1TMxL1V8eXLQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dawid\\Desktop\\WebAplicat5ion\\WebApplication1.csproj",
+  "projectFilePath": "C:\\Users\\Dawid\\Desktop\\asp.sklep\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dawid\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Dawid\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.15\\microsoft.aspnetcore.cryptography.internal.5.0.15.nupkg.sha512",
